@@ -13,12 +13,12 @@
 
     <fragment
         android:id="@+id/navigation_favorite"
-        android:name="com.example.thebookuser.ui.favorite.FavoriteFragment"
+        android:name="com.example.thebookuser.navigation_favorite"
         android:label="お気に入り"
         tools:layout="@layout/fragment_navigation_favorite" />
     <fragment
         android:id="@+id/navigation_location"
         android:name="com.example.thebookuser.navigation_location"
         android:label="近くのお店"
-        tools:layout="@layout/fragment_navigation_location" />
+        tools:layout="@layout/navigation_location" />
 </navigation>

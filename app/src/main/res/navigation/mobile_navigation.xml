@@ -21,14 +21,4 @@
         android:name="com.example.thebookuser.navigation_location"
         android:label="近くのお店"
         tools:layout="@layout/navigation_location" />
-    <fragment
-        android:id="@+id/navigation_needlist"
-        android:name="com.example.thebookuser.navigation_needlist"
-        android:label="fragment_navigation_needlist"
-        tools:layout="@layout/fragment_navigation_needlist" />
-    <fragment
-        android:id="@+id/navigation_needlist_add"
-        android:name="com.example.thebookuser.navigation_needlist_add"
-        android:label="fragment_navigation_needlist_add"
-        tools:layout="@layout/fragment_navigation_needlist_add" />
 </navigation>

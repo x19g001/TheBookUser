@@ -3,6 +3,7 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="osirase">お知らせ</string>
+    <string name="favorite">お気に入り</string>
     <string name="roguinsite">ログインしてください</string>
     <string name="title_home">ホーム</string>
     <string name="title_activity_favorite">FavoriteActivity</string>

@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="ログイン"
+        android:icon="@drawable/ic_login_24"
+         >
+
+        <menu>
+
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home_black_24dp"
@@ -16,6 +28,7 @@
         android:icon="@drawable/ic_location_24"
         android:title="近くのお店" />
 
-
+        </menu>
+    </item>
 
 </menu>

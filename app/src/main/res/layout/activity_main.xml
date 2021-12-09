@@ -32,7 +32,7 @@
         app:navGraph="@navigation/mobile_navigation" />
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar2"
+        android:id="@+id/toolbarTop"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"

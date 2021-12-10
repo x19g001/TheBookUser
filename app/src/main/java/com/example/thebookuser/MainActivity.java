@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+
 //          ツールバー用処理
        // setSupportActionBar(findViewById(R.id.toolbar));
        // getSupportActionBar().setTitle("home_screen");

@@ -21,4 +21,24 @@
         android:name="com.example.thebookuser.navigation_location"
         android:label="近くのお店"
         tools:layout="@layout/fragment_navigation_location" />
+    <fragment
+        android:id="@+id/navigation_choiceaccount"
+        android:name="com.example.thebookuser.navigation_choiceaccount"
+        android:label="fragment_navigation_choiceaccount"
+        tools:layout="@layout/fragment_navigation_choiceaccount" />
+    <fragment
+        android:id="@+id/navigation_newaccount"
+        android:name="com.example.thebookuser.navigation_newaccount"
+        android:label="fragment_navigation_newaccount"
+        tools:layout="@layout/fragment_navigation_newaccount" />
+    <fragment
+        android:id="@+id/navigation_repassword"
+        android:name="com.example.thebookuser.navigation_repassword"
+        android:label="fragment_navigation_repassword"
+        tools:layout="@layout/fragment_navigation_repassword" />
+    <fragment
+        android:id="@+id/navigation_sendmail"
+        android:name="com.example.thebookuser.navigation_sendmail"
+        android:label="fragment_navigation_sendmail"
+        tools:layout="@layout/fragment_navigation_sendmail" />
 </navigation>

@@ -10,4 +10,26 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="add_button">追加する</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">メールアドレス</string>
+    <string name="prompt_password">パスワード</string>
+    <string name="action_sign_in">ログイン</string>
+    <string name="prompt_username">ユーザー名</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">メールアドレスを正しく入力してください。</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="login_tips">アカウント登録をすると\n欲しいものリストや\n書店のお気に入り登録が\nできるようになります。</string>
+    <string name="new_account_text">新規アカウント登録</string>
+    <string name="login_text">アカウントを\nお持ちの方はこちら</string>
+    <string name="pass_forget">パスワードをお忘れですか？</string>
+    <string name="nohave_account">アカウントをお持ちでない方はこちらから</string>
+    <string name="make_account">新規アカウント登録</string>
+    <string name="next_text">次へ</string>
+    <string name="username_prompt">16文字以内で入力してください</string>
+    <string name="mail_tips">このメールアドレスがご自身のものであることの確認が\n必要になります。</string>
+    <string name="password_tips">英大文字、英小文字、半角数字を組み合わせて8文字以上で\n入力してください。</string>
+    <string name="send">送信</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.thebookuser.ui;
+package com.example.thebookuser;
 
 import android.app.AppComponentFactory;
 import android.os.Bundle;

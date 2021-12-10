@@ -1,4 +1,4 @@
-package com.example.thebookuser.ui.home;
+package com.example.thebookuser.ui.favorite;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,23 +13,23 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.thebookuser.R;
-import com.example.thebookuser.databinding.FragmentHomeBinding;
+import com.example.thebookuser.databinding.FragmentNavigationFavoriteBinding;
 
-public class HomeFragment extends Fragment {
+public class FavoriteFragment extends Fragment {
 
-    private HomeViewModel homeViewModel;
-    private FragmentHomeBinding binding;
+    private FavoriteViewModel favoriteViewModel;
+    private FragmentNavigationFavoriteBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+        favoriteViewModel =
+                new ViewModelProvider(this).get(FavoriteViewModel.class);
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
+        binding = FragmentNavigationFavoriteBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textView;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        final TextView textView = binding.textFavorite;
+        favoriteViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

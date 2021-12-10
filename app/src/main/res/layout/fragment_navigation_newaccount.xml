@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewAccount">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolbarTheme"
+        android:layout_width="413dp"
+        android:layout_height="60dp"
+        android:background="@color/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prompt_username"
+        android:textColor="#020000"
+        app:layout_constraintBottom_toTopOf="@+id/make_name"
+        app:layout_constraintEnd_toEndOf="@+id/make_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/make_name" />
+
+    <EditText
+        android:id="@+id/make_name"
+        android:layout_width="342dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="136dp"
+        android:autofillHints="@string/username_prompt"
+        android:background="@drawable/edittext_flame"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/make_mail"
+        android:layout_width="340dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="40dp"
+        android:autofillHints="@string/prompt_email"
+        android:background="@drawable/edittext_flame"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/make_name" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prompt_email"
+        android:textColor="#020000"
+        app:layout_constraintBottom_toTopOf="@+id/make_mail"
+        app:layout_constraintEnd_toEndOf="@+id/make_mail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/make_mail" />
+
+    <TextView
+        android:id="@+id/mail_planation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/mail_tips"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/make_mail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/make_mail"
+        app:layout_constraintTop_toBottomOf="@+id/make_mail" />
+
+    <EditText
+        android:id="@+id/make_password"
+        android:layout_width="340dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="92dp"
+        android:autofillHints="@string/prompt_password"
+        android:background="@drawable/edittext_flame"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/make_mail" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prompt_password"
+        android:textColor="#020000"
+        app:layout_constraintBottom_toTopOf="@+id/make_password"
+        app:layout_constraintEnd_toEndOf="@+id/make_password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/make_password" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/re_password"
+        android:layout_width="340dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="28dp"
+        android:autofillHints="@string/prompt_password"
+        android:background="@drawable/edittext_flame"
+        android:hint="確認"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/make_password" />
+
+    <TextView
+        android:id="@+id/password_planation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/password_tips"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/re_password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/re_password"
+        app:layout_constraintTop_toBottomOf="@+id/re_password" />
+
+    <CheckBox
+        android:id="@+id/password_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="パスワードを表示します"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/re_password" />
+
+    <Button
+        android:id="@+id/next_mail_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="144dp"
+        android:background="@drawable/login_entry"
+        android:text="@string/next_text"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

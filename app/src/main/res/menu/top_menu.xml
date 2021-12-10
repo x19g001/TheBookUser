@@ -3,9 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
+        android:id="@+id/app_bar_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="本の検索"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always" />
+    <item
         android:id="@+id/navigation_login"
         android:icon="@drawable/ic_login_24"
         android:title="ログインする"
         app:showAsAction="ifRoom"/>
+
+
 
 </menu>

@@ -17,6 +17,8 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.example.thebookuser.databinding.ActivityMainBinding;
 
+
+
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;

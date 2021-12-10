@@ -35,7 +35,6 @@
         android:id="@+id/toolbarTop"
         android:layout_width="410dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
         android:layout_marginEnd="1dp"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
@@ -43,5 +42,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:menu="@menu/top_menu" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

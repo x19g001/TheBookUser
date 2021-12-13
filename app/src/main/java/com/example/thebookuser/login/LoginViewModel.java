@@ -10,6 +10,9 @@ import com.example.loginscreen.R;
 import com.example.loginscreen.data.LoginRepository;
 import com.example.loginscreen.data.Result;
 import com.example.loginscreen.data.model.LoggedInUser;
+import com.example.thebookuser.data.LoginRepository;
+import com.example.thebookuser.data.Result;
+import com.example.thebookuser.data.model.LoggedInUser;
 
 public class LoginViewModel extends ViewModel {
 

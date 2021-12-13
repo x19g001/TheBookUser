@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.thebookuser.R;
 
 public class Searchactivity extends AppCompatActivity {

@@ -3,6 +3,7 @@ package com.example.thebookuser;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -15,7 +16,7 @@ import android.widget.Button;
  * Use the {@link navigation_sendmail#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class navigation_sendmail extends Fragment {
+public class navigation_sendmail extends AppCompatActivity {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -56,7 +57,7 @@ public class navigation_sendmail extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
 
-        setContentView(R.layout.activity_send_mail);
+        setContentView(R.layout.fragment_navigation_sendmail);
 
         setSupportActionBar(findViewById(R.id.toolbar));
         getSupportActionBar().setDisplayShowHomeEnabled(true);

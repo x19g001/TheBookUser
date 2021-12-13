@@ -45,17 +45,17 @@ public class navigation_sendmail extends AppCompatActivity {
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
+//        fragment.setArguments(args);
         return fragment;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+//        if (getArguments() != null) {
+//            mParam1 = getArguments().getString(ARG_PARAM1);
+//            mParam2 = getArguments().getString(ARG_PARAM2);
+//        }
 
         setContentView(R.layout.fragment_navigation_sendmail);
 
@@ -69,18 +69,18 @@ public class navigation_sendmail extends AppCompatActivity {
         //修正ボタンが押されたときの動作
         fix_button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(SendMail.this, NewAccount.class);
+                Intent intent = new Intent(navigation_sendmail.this, navigation_newaccount.class);
                 startActivity(intent);
             }
         });
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_navigation_sendmail, container, false);
-    }
+//    @Override
+//    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+//                             Bundle savedInstanceState) {
+//        // Inflate the layout for this fragment
+//        return inflater.inflate(R.layout.fragment_navigation_sendmail, container, false);
+//    }
     @Override
     public boolean onSupportNavigateUp() {
         finish();

@@ -1,18 +1,15 @@
 package com.example.thebookuser.login;
 
-import android.util.Patterns;
-
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.loginscreen.R;
-import com.example.loginscreen.data.LoginRepository;
-import com.example.loginscreen.data.Result;
-import com.example.loginscreen.data.model.LoggedInUser;
+import android.util.Patterns;
+
 import com.example.thebookuser.data.LoginRepository;
 import com.example.thebookuser.data.Result;
 import com.example.thebookuser.data.model.LoggedInUser;
+import com.example.thebookuser.R;
 
 public class LoginViewModel extends ViewModel {
 

@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -39,6 +40,12 @@ public class MainActivity extends AppCompatActivity {
 
 
         final Button homenext_button = findViewById(R.id.home_button);
+
+        //アクションバーを無理やり非表示
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.hide();
+        }
 
         //ボタンが押されたときの動作
         homenext_button.setOnClickListener(new View.OnClickListener(){

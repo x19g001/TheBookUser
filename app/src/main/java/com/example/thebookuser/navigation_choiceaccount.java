@@ -3,6 +3,7 @@ package com.example.thebookuser;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -10,12 +11,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.thebookuser.login.LoginActivity;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link navigation_choiceaccount#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class navigation_choiceaccount extends Fragment {
+public class navigation_choiceaccount extends AppCompatActivity {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -44,19 +47,19 @@ public class navigation_choiceaccount extends Fragment {
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
+//        fragment.setArguments(args);
         return fragment;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+//        if (getArguments() != null) {
+//            mParam1 = getArguments().getString(ARG_PARAM1);
+//            mParam2 = getArguments().getString(ARG_PARAM2);
+//        }
 
-        setContentView(R.layout.activity_choice_account);
+        setContentView(R.layout.fragment_navigation_choiceaccount);
 
         final Button new_account_button = findViewById(R.id.new_a_button);
         final Button next_login_button = findViewById(R.id.next_log_button);
@@ -64,7 +67,7 @@ public class navigation_choiceaccount extends Fragment {
         //アカウント新規登録ボタンが押されたときの動作
         new_account_button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(ChoiceAccount.this, NewAccount.class);
+                Intent intent = new Intent(navigation_choiceaccount.this, navigation_newaccount.class);
                 startActivity(intent);
             }
         });
@@ -73,7 +76,7 @@ public class navigation_choiceaccount extends Fragment {
         next_login_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ChoiceAccount.this, LoginActivity.class);
+                Intent intent = new Intent(navigation_choiceaccount.this, LoginActivity.class);
                 startActivity(intent);
             }
         });
@@ -81,7 +84,7 @@ public class navigation_choiceaccount extends Fragment {
         getSupportActionBar().setTitle("ログイン画面");
     }
 
-    @Override
+//    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment

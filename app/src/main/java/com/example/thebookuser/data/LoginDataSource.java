@@ -1,6 +1,6 @@
 package com.example.thebookuser.data;
 
-import com.example.loginscreen.data.model.LoggedInUser;
+import com.example.thebookuser.data.model.LoggedInUser;
 
 import java.io.IOException;
 

@@ -4,7 +4,7 @@
     <string name="title_notifications">Notifications</string>
     <string name="osirase">お知らせ</string>
     <string name="favorite">お気に入り</string>
-    <string name="roguinsite">欲しいものリストログインしてください</string>
+    <string name="roguinsite">欲しいものリスト\n\nログイン\nしてください</string>
     <string name="title_home">ホーム</string>
     <string name="title_activity_favorite">FavoriteActivity</string>
     <!-- TODO: Remove or change this placeholder text -->

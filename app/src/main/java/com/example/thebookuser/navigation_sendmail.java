@@ -3,6 +3,7 @@ package com.example.thebookuser;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -15,7 +16,7 @@ import android.widget.Button;
  * Use the {@link navigation_sendmail#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class navigation_sendmail extends Fragment {
+public class navigation_sendmail extends AppCompatActivity {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -44,19 +45,19 @@ public class navigation_sendmail extends Fragment {
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
+//        fragment.setArguments(args);
         return fragment;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+//        if (getArguments() != null) {
+//            mParam1 = getArguments().getString(ARG_PARAM1);
+//            mParam2 = getArguments().getString(ARG_PARAM2);
+//        }
 
-        setContentView(R.layout.activity_send_mail);
+        setContentView(R.layout.fragment_navigation_sendmail);
 
         setSupportActionBar(findViewById(R.id.toolbar));
         getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -68,18 +69,18 @@ public class navigation_sendmail extends Fragment {
         //修正ボタンが押されたときの動作
         fix_button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(SendMail.this, NewAccount.class);
+                Intent intent = new Intent(navigation_sendmail.this, navigation_newaccount.class);
                 startActivity(intent);
             }
         });
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_navigation_sendmail, container, false);
-    }
+//    @Override
+//    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+//                             Bundle savedInstanceState) {
+//        // Inflate the layout for this fragment
+//        return inflater.inflate(R.layout.fragment_navigation_sendmail, container, false);
+//    }
     @Override
     public boolean onSupportNavigateUp() {
         finish();

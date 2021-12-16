@@ -20,10 +20,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.loginscreen.NewAccount;
-import com.example.loginscreen.R;
-import com.example.loginscreen.RePasswordConfig;
-import com.example.loginscreen.databinding.ActivityLoginBinding;
+import com.example.thebookuser.navigation_choiceaccount;
+import com.example.thebookuser.navigation_newaccount;
+import com.example.thebookuser.R;
+import com.example.thebookuser.repassword_config;
+import com.example.thebookuser.databinding.ActivityLoginBinding;
+import com.example.thebookuser.databinding.ActivityLoginBinding;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -135,7 +137,7 @@ public class LoginActivity extends AppCompatActivity {
         //アカウント新規登録ボタンが押されたときの動作
         change_new_account.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(LoginActivity.this, NewAccount.class);
+                Intent intent = new Intent(LoginActivity.this, navigation_choiceaccount.class);
                 startActivity(intent);
             }
         });
@@ -145,7 +147,7 @@ public class LoginActivity extends AppCompatActivity {
         //パスワード再設定ボタンが押されたときの動作
         pass_forgeted.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(LoginActivity.this, RePasswordConfig.class);
+                Intent intent = new Intent(LoginActivity.this, repassword_config.class);
                 startActivity(intent);
             }
         });

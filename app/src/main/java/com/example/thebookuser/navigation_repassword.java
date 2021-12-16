@@ -2,6 +2,7 @@ package com.example.thebookuser;
 
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -13,7 +14,7 @@ import android.view.ViewGroup;
  * Use the {@link navigation_repassword#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class navigation_repassword extends Fragment {
+public class navigation_repassword extends AppCompatActivity {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -42,19 +43,19 @@ public class navigation_repassword extends Fragment {
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
+//        fragment.setArguments(args);
         return fragment;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+//        if (getArguments() != null) {
+//            mParam1 = getArguments().getString(ARG_PARAM1);
+//            mParam2 = getArguments().getString(ARG_PARAM2);
+//        }
 
-        setContentView(R.layout.activity_re_password_config);
+        setContentView(R.layout.fragment_navigation_repassword);
 
         setSupportActionBar(findViewById(R.id.toolbar));
         getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -63,7 +64,7 @@ public class navigation_repassword extends Fragment {
         getSupportActionBar().setTitle("パスワードの再設定");
     }
 
-    @Override
+//    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment

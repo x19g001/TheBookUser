@@ -2,11 +2,13 @@ package com.example.thebookuser;
 
 import static com.example.thebookuser.R.id.nav_view;
 import static com.example.thebookuser.R.id.toolbar;
-import static com.example.thebookuser.R.id.toolbar2;
-import static com.example.thebookuser.R.id.toolbarTop;
+
+
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -44,17 +46,15 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
 
-        //ツールバーの遷移処理
-        Toolbar navView2 = findViewById(toolbarTop);
-
 
         final Button homenext_button = findViewById(R.id.home_button);
 
+
         //アクションバーを無理やり非表示
-        ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null) {
-            actionBar.hide();
-        }
+//        ActionBar actionBar = getSupportActionBar();
+//        if (actionBar != null) {
+//            actionBar.hide();
+//        }
 
         //ボタンが押されたときの動作
         homenext_button.setOnClickListener(new View.OnClickListener(){
@@ -63,6 +63,34 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    //メニューやボタンを表示させる
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.top_menu, menu);
+        return true;
+    }
+
+    //メニューやボタンの処理を実装する
+    Toolbar login_button = findViewById(R.id.navigation_login);
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.app_bar_search:
+                return true;
+
+            case R.id.navigation_login:
+                login_button.setOnClickListener(new View.OnClickListener(){
+                    public void onClick(View v){
+                        Intent intent = new Intent(MainActivity.this,navigation_choiceaccount.class);
+                        startActivity(intent);
+                    }
+                });
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
 }

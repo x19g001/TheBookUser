@@ -26,6 +26,10 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".navigation_choiceaccount"
+            android:label="LoginScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
             android:name=".navigation_needlist"
             android:label="NeedListScreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />

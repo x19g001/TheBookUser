@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".ChoiceAccount">
+    tools:context=".navigation_choiceaccount">
 
     <Button
         android:id="@+id/new_a_button"

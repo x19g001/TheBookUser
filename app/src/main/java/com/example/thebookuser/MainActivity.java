@@ -73,20 +73,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //メニューやボタンの処理を実装する
-    Toolbar login_button = findViewById(R.id.navigation_login);
+    Intent intent;
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.app_bar_search:
+
                 return true;
 
             case R.id.navigation_login:
-                login_button.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v){
-                        Intent intent = new Intent(MainActivity.this,navigation_choiceaccount.class);
-                        startActivity(intent);
-                    }
-                });
+                    intent = new Intent(getApplication(), navigation_choiceaccount.class);
+                    startActivity(intent);
                 return true;
         }
 

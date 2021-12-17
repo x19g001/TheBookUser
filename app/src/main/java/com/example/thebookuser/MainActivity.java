@@ -77,10 +77,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            //サーチバーがタップされたとき
             case R.id.app_bar_search:
 
                 return true;
-
+            //ログインボタンがタップされたとき
             case R.id.navigation_login:
                     intent = new Intent(getApplication(), navigation_choiceaccount.class);
                     startActivity(intent);

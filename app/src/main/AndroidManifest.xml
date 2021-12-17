@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TheBookUser">
+
         <activity
             android:name=".repassword_config"
             android:exported="false" />
@@ -38,5 +39,6 @@
             android:label="AddListScreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
+
 
 </manifest>

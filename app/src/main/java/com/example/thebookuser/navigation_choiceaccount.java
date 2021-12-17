@@ -25,11 +25,12 @@ public class navigation_choiceaccount extends AppCompatActivity {
 //            mParam2 = getArguments().getString(ARG_PARAM2);
 //        }
 
-        final Button new_account_button = findViewById(R.id.new_a_button);
-        final Button next_login_button = findViewById(R.id.next_log_button);
+         Button new_account_button = findViewById(R.id.new_a_button);
+         Button next_login_button = findViewById(R.id.next_log_button);
 
         //アカウント新規登録ボタンが押されたときの動作
         new_account_button.setOnClickListener(new View.OnClickListener(){
+            @Override
             public void onClick(View v){
                 Intent intent = new Intent(getApplication(), navigation_newaccount.class);
                 startActivity(intent);
@@ -38,6 +39,7 @@ public class navigation_choiceaccount extends AppCompatActivity {
 
         //ログインボタンが押されたときの動作
         next_login_button.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplication(), LoginActivity.class);
                 startActivity(intent);

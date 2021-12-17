@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(binding.navView, navController);
 
 
-        final Button homenext_button = findViewById(R.id.home_button);
+         Button homenext_button = findViewById(R.id.home_button);
 
 
         //アクションバーを無理やり非表示

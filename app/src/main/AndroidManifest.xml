@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TheBookUser">
+
         <activity
             android:name=".repassword_config"
             android:exported="false" />
@@ -26,6 +27,10 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".navigation_choiceaccount"
+            android:label="LoginScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
             android:name=".navigation_needlist"
             android:label="NeedListScreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
@@ -34,5 +39,6 @@
             android:label="AddListScreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
+
 
 </manifest>

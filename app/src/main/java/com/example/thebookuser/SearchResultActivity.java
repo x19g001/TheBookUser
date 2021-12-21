@@ -1,5 +1,6 @@
 package com.example.thebookuser;
 
+import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -7,9 +8,10 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 
-import androidx.appcompat.app.AppCompatActivity;
+import com.example.thebookuser.ui.home.ListViewAdapter;
 
-public class SearchResultActivity extends AppCompatActivity {
+
+public class SearchResultActivity extends AppCompatActivity
 
     implements AdapterView.OnItemClickListener
 
@@ -48,9 +50,8 @@ public class SearchResultActivity extends AppCompatActivity {
                 "文庫判", "B6判", "文庫判", "46判", "文庫判", "B6判"
         };
 
-
         @Override
-        protected void onCreate (Bundle savedInstanceState){
+        protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.searchresult);
 
@@ -61,8 +62,7 @@ public class SearchResultActivity extends AppCompatActivity {
         // BaseAdapter を継承したadapterのインスタンスを生成
         // レイアウトファイル list.xml を activity_main.xml に
         // inflate するためにadapterに引数として渡す
-        BaseAdapter adapter = new ListViewAdapter(this.getApplicationContext(),
-                R.layout.list, scenes);
+        BaseAdapter adapter=new ListViewAdapter(this.getApplicationContext(),R.layout.list,scenes);
 
         // ListViewにadapterをセット
         listView.setAdapter(adapter);
@@ -73,21 +73,21 @@ public class SearchResultActivity extends AppCompatActivity {
     }
 
         @Override
-        public void onItemClick (AdapterView < ? > parent, View v,
-        int position, long id){
+        public void onItemClick(AdapterView<?> parent, View v,
+        int position, long id) {
 
         Intent intent = new Intent(
                 this.getApplicationContext(), SearchActivity.class);
 
         // clickされたpositionのtextとphotoのID
         String selectedText = scenes[position];
-        String selectedText3 = "著者名:" + author[position];
-        String selectedText2 = "ISBN:" + isbn[position];
-        String selectedText4 = "レーベル:" + lebel[position];
-        String selectedText5 = "出版社:" + publisher[position];
-        String selectedText6 = "値段:" + money[position] + "円(税込)";
-        String selectedText7 = "ジャンル:" + genre[position];
-        String selectedText8 = "判型:" + hangata[position];
+        String selectedText3 = "著者名:"+author[position];
+        String selectedText2 = "ISBN:"+isbn[position];
+        String selectedText4 = "レーベル:"+lebel[position];
+        String selectedText5 = "出版社:"+publisher[position];
+        String selectedText6 = "値段:"+money[position]+"円(税込)";
+        String selectedText7 = "ジャンル:"+ genre[position];
+        String selectedText8 = "判型:"+hangata[position];
 
         // インテントにセット
         intent.putExtra("Text", selectedText);
@@ -101,5 +101,6 @@ public class SearchResultActivity extends AppCompatActivity {
         // SubActivityへ遷移
         startActivity(intent);
     }
-    }
+
+
 }

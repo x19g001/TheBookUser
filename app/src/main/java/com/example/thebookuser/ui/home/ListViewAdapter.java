@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.example.thebookuser.R;
+
 public class ListViewAdapter extends BaseAdapter {
 
     static class ViewHolder {
@@ -19,8 +21,8 @@ public class ListViewAdapter extends BaseAdapter {
     private final String[] titles;
 
     //
-    ListViewAdapter(Context context, int itemLayoutId,
-                    String[] scenes) {
+    public ListViewAdapter(Context context, int itemLayoutId,
+                           String[] scenes) {
         super();
         this.inflater = (LayoutInflater)
                 context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -38,8 +40,7 @@ public class ListViewAdapter extends BaseAdapter {
             convertView = inflater.inflate(itemLayoutId, parent, false);
             // ViewHolder を生成
             holder = new ViewHolder();
-            holder.textView = convertView.findViewById(R.id.textView);
-
+            holder.textView=convertView.findViewById(R.id.textView);
             convertView.setTag(holder);
 
         }

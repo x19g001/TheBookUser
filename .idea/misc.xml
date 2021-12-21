@@ -3,8 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/x19g011/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/x19g011/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
         <entry key="..\:/Users/x19g011/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/fragment_home.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/x19g011/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/fragment_navigation_choiceaccount.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/x19g011/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/fragment_navigation_favorite.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/x19g011/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/fragment_navigation_location.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/x19g011/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/fragment_navigation_newaccount.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/x19g011/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/fragment_navigation_sendmail.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/x19g011/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/fragment_notifications.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/x19g011/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/list.xml" value="0.1762917933130699" />
         <entry key="..\:/Users/x19g011/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/list_items.xml" value="0.1762917933130699" />
         <entry key="..\:/Users/x19g011/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/searchbook.xml" value="0.1762917933130699" />

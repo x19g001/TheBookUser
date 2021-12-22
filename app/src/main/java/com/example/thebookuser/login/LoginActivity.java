@@ -137,7 +137,7 @@ public class LoginActivity extends AppCompatActivity {
         //アカウント新規登録ボタンが押されたときの動作
         change_new_account.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(LoginActivity.this, navigation_choiceaccount.class);
+                Intent intent = new Intent(LoginActivity.this, navigation_newaccount.class);
                 startActivity(intent);
             }
         });

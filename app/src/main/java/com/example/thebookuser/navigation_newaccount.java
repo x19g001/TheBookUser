@@ -40,7 +40,7 @@ public class navigation_newaccount extends AppCompatActivity {
 
         final Button next_mail_send_button = findViewById(R.id.next_mail_send);
 
-        //アカウント新規登録ボタンが押されたときの動作
+        //次へが押されたときの動作
         next_mail_send_button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent intent = new Intent(getApplication(), navigation_sendmail.class);

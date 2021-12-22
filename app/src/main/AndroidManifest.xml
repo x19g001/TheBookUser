@@ -46,6 +46,15 @@
             android:name=".login.LoginActivity"
             android:label="LoginScreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".navigation_newaccount"
+            android:label="LoginScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".navigation_sendmail"
+            android:label="LoginScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
     </application>
 
 

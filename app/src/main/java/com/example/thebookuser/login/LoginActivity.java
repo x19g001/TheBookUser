@@ -147,7 +147,7 @@ public class LoginActivity extends AppCompatActivity {
         //パスワード再設定ボタンが押されたときの動作
         pass_forgeted.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(LoginActivity.this, repassword_config.class);
+                Intent intent = new Intent(getApplication(), repassword_config.class);
                 startActivity(intent);
             }
         });

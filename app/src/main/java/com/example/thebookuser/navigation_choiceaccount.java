@@ -37,7 +37,7 @@ public class navigation_choiceaccount extends AppCompatActivity {
             }
         });
 
-        //ログインボタンが押されたときの動作
+        //アカウントをお持ちの方はこちらが押されたときの動作
         next_login_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

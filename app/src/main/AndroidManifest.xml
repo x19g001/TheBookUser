@@ -12,10 +12,13 @@
 
         <activity
             android:name=".repassword_config"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".repassword_confirm"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -27,16 +30,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".navigation_choiceaccount"
-            android:label="LoginScreen"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity
             android:name=".navigation_needlist"
             android:label="NeedListScreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".navigation_needlist_add"
             android:label="AddListScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        //ログイン系
+        <activity
+            android:name=".navigation_choiceaccount"
+            android:label="LoginScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:label="LoginScreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
 

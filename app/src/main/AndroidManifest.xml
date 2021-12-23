@@ -54,6 +54,15 @@
             android:name=".navigation_sendmail"
             android:label="LoginScreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        //検索系
+        <activity
+            android:name=".SearchActivity"
+            android:label="SearchScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".SearchResultActivity"
+            android:label="SearchScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
     </application>
 

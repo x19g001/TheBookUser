@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.style.UnderlineSpan;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,6 +27,9 @@ public class SearchActivity extends AppCompatActivity {
         String selectedText7 = intent.getStringExtra("Text7");
         String selectedText8 = intent.getStringExtra("Text8");
 
+        int selectedPhoto = intent.getIntExtra("Photo", 0);
+        ImageView imageView1 = findViewById(R.id.selected_photo);
+        imageView1.setImageResource(selectedPhoto);
 
 
         TextView textView = findViewById(R.id.selected_text);

@@ -25,7 +25,7 @@ public class repassword_config extends AppCompatActivity {
         //送信ボタンが押されたときの動作
         send_button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(repassword_config.this, repassword_confirm.class);
+                Intent intent = new Intent(getApplication(), repassword_confirm.class);
                 startActivity(intent);
             }
         });

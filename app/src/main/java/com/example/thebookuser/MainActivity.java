@@ -79,7 +79,8 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             //サーチバーがタップされたとき
             case R.id.app_bar_search:
-
+                intent = new Intent(getApplication(), SearchResultActivity.class);
+                startActivity(intent);
                 return true;
             //ログインボタンがタップされたとき
             case R.id.navigation_login:

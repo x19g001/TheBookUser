@@ -12,10 +12,13 @@
 
         <activity
             android:name=".repassword_config"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".repassword_confirm"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -27,10 +30,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".navigation_choiceaccount"
-            android:label="LoginScreen"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity
             android:name=".navigation_needlist"
             android:label="NeedListScreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
@@ -38,20 +37,32 @@
             android:name=".navigation_needlist_add"
             android:label="AddListScreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-
+        //ログイン系
+        <activity
+            android:name=".navigation_choiceaccount"
+            android:label="LoginScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:label="LoginScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".navigation_newaccount"
+            android:label="LoginScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".navigation_sendmail"
+            android:label="LoginScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        //検索系
         <activity
             android:name=".SearchActivity"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+            android:label="SearchScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".SearchResultActivity"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:label="SearchScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
     </application>
 

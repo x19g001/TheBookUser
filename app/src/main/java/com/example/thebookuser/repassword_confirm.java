@@ -25,7 +25,7 @@ public class repassword_confirm extends AppCompatActivity {
         //OKボタンが押されたときの動作
         ok_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(repassword_confirm.this, MainActivity.class);
+                Intent intent = new Intent(getApplication(), MainActivity.class);
                 startActivity(intent);
             }
         });

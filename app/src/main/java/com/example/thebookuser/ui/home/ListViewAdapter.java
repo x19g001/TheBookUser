@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.thebookuser.R;
@@ -13,22 +14,22 @@ public class ListViewAdapter extends BaseAdapter {
 
     static class ViewHolder {
         TextView textView;
-
+        ImageView imageView;
     }
 
     private final LayoutInflater inflater;
     private final int itemLayoutId;
     private final String[] titles;
-
+    private int[] ids;
     //
     public ListViewAdapter(Context context, int itemLayoutId,
-                           String[] scenes) {
+                           String[] scenes, int[] photos) {
         super();
         this.inflater = (LayoutInflater)
                 context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         this.itemLayoutId = itemLayoutId;
         this.titles = scenes;
-
+        this.ids = photos;
     }
 
     @Override
@@ -41,6 +42,7 @@ public class ListViewAdapter extends BaseAdapter {
             // ViewHolder を生成
             holder = new ViewHolder();
             holder.textView=convertView.findViewById(R.id.textView);
+            holder.imageView = convertView.findViewById(R.id.imageView);
             convertView.setTag(holder);
 
         }
@@ -49,7 +51,7 @@ public class ListViewAdapter extends BaseAdapter {
             holder = (ViewHolder) convertView.getTag();
         }
 
-
+        holder.imageView.setImageResource(ids[position]);
         // 現在の position にあるファイル名リストを holder の textView にセット
         holder.textView.setText(titles[position]);
         return convertView;

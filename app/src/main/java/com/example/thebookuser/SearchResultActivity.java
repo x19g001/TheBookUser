@@ -50,6 +50,12 @@ public class SearchResultActivity extends AppCompatActivity
                 "文庫判", "B6判", "文庫判", "46判", "文庫判", "B6判"
         };
 
+        private static final int[] photos = {
+                R.drawable.hibana,R.drawable.roketto,R.drawable.money,R.drawable.hituzimori,R.drawable.harrypotta,
+                R.drawable.maskareido,R.drawable.jyouhou
+        };
+
+
         @Override
         protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,7 +68,7 @@ public class SearchResultActivity extends AppCompatActivity
         // BaseAdapter を継承したadapterのインスタンスを生成
         // レイアウトファイル list.xml を activity_main.xml に
         // inflate するためにadapterに引数として渡す
-        BaseAdapter adapter=new ListViewAdapter(this.getApplicationContext(),R.layout.list,scenes);
+        BaseAdapter adapter=new ListViewAdapter(this.getApplicationContext(),R.layout.list,scenes,photos);
 
         // ListViewにadapterをセット
         listView.setAdapter(adapter);
@@ -88,8 +94,10 @@ public class SearchResultActivity extends AppCompatActivity
         String selectedText6 = "値段:"+money[position]+"円(税込)";
         String selectedText7 = "ジャンル:"+ genre[position];
         String selectedText8 = "判型:"+hangata[position];
+        int selectedPhoto = photos[position];
 
-        // インテントにセット
+
+            // インテントにセット
         intent.putExtra("Text", selectedText);
         intent.putExtra("Text2", selectedText2);
         intent.putExtra("Text3", selectedText3);
@@ -98,6 +106,7 @@ public class SearchResultActivity extends AppCompatActivity
         intent.putExtra("Text6", selectedText6);
         intent.putExtra("Text7", selectedText7);
         intent.putExtra("Text8", selectedText8);
+        intent.putExtra("Photo", selectedPhoto);
         // SubActivityへ遷移
         startActivity(intent);
     }

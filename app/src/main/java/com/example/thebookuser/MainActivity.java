@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.SearchView;
 import android.widget.TextView;
 
 
@@ -29,6 +30,7 @@ import com.example.thebookuser.databinding.ActivityMainBinding;
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
+    SearchView mSearchView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,20 +70,35 @@ public class MainActivity extends AppCompatActivity {
     //メニューやボタンを表示させる
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+        //検索バーを追加(必須)
         getMenuInflater().inflate(R.menu.top_menu, menu);
+
+        MenuItem menuItem=menu.findItem(R.id.app_bar_search);
+        mSearchView =(SearchView) menuItem.getActionView();
+        mSearchView.setOnQueryTextListener(this.onQueryTextListener);
         return true;
     }
 
+    //サーチバーがタップされたとき
+    private SearchView.OnQueryTextListener onQueryTextListener=new SearchView.OnQueryTextListener() {
+        @Override
+        public boolean onQueryTextSubmit(String searchWord) {
+            Intent intent=new Intent(MainActivity.this,SearchResultActivity.class);
+            startActivity(intent);
+            return true;
+        }
+
+        @Override
+        public boolean onQueryTextChange(String newText) {
+            return false;
+        }
+    };
     //メニューやボタンの処理を実装する
     Intent intent;
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            //サーチバーがタップされたとき
-            case R.id.app_bar_search:
-                intent = new Intent(getApplication(), SearchResultActivity.class);
-                startActivity(intent);
-                return true;
+
             //ログインボタンがタップされたとき
             case R.id.navigation_login:
                     intent = new Intent(getApplication(), navigation_choiceaccount.class);

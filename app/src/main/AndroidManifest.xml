@@ -11,16 +11,7 @@
         android:theme="@style/Theme.TheBookUser">
 
         <activity
-            android:name=".repassword_config"
-            android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity
-            android:name=".repassword_confirm"
-            android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-
-        <activity
-            android:name=".MainActivity"
+            android:name=".MainActivityFake"
             android:exported="true"
             android:label="@string/app_name">
             <intent-filter>
@@ -29,6 +20,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity
+            android:name=".repassword_config"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".repassword_confirm"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+
         <activity
             android:name=".navigation_needlist"
             android:label="NeedListScreen"

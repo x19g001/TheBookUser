@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
     //サーチバーがタップされたとき
     private SearchView.OnQueryTextListener onQueryTextListener=new SearchView.OnQueryTextListener() {
         @Override
-        public boolean onQueryTextSubmit(String query) {
+        public boolean onQueryTextSubmit(String searchWord) {
             Intent intent=new Intent(MainActivity.this,SearchResultActivity.class);
             startActivity(intent);
             return true;

@@ -80,12 +80,9 @@
         app:layout_constraintBottom_toTopOf="@+id/home_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.415"
-<<<<<<<<< Temporary merge branch 1
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.206" />
-=========
-        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
@@ -112,8 +109,6 @@
         android:translationZ="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/home_button"
         app:layout_constraintStart_toStartOf="@+id/home_button" />
->>>>>>>>> Temporary merge branch 2
-
     <!--    <androidx.appcompat.widget.Toolbar-->
 <!--        android:id="@+id/toolbar"-->
 <!--        style="@style/ToolbarTheme"-->

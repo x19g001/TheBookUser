@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TheBookUser">
-
         <activity
             android:name=".repassword_config"
             android:exported="false"
@@ -18,7 +17,6 @@
             android:name=".repassword_confirm"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -37,7 +35,6 @@
             android:name=".navigation_needlist_add"
             android:label="AddListScreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        //ログイン系
         <activity
             android:name=".navigation_choiceaccount"
             android:label="LoginScreen"
@@ -54,7 +51,6 @@
             android:name=".navigation_sendmail"
             android:label="LoginScreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        //検索系
         <activity
             android:name=".SearchActivity"
             android:label="SearchScreen"
@@ -64,7 +60,8 @@
             android:label="SearchScreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
-    </application>
 
+
+    </application>
 
 </manifest>

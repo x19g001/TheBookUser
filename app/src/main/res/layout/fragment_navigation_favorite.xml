@@ -4,18 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/favoritelist"
     tools:context=".ui.favorite.FavoriteFragment">
 
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="321dp"
+        android:layout_height="290dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
     <TextView
-        android:id="@+id/textFavorite"
+        android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="32dp"
-
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="FJB書房"
         android:textSize="34sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:translationZ="10dp"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintTop_toTopOf="@+id/button3" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="315dp"
+        android:layout_height="185dp"
+        android:layout_marginStart="4dp"
+
+        android:layout_marginTop="60dp"
+        android:src="@drawable/fjbmap"
+        android:translationZ="10dp"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintTop_toTopOf="@+id/button3" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

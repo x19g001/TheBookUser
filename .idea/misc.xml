@@ -3,16 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/x19g001/AndroidStudioProjects/TheBookUser/app/src/main/res/drawable/ic_favorite_24.xml" value="0.265625" />
+        <entry key="..\:/Users/x19g001/AndroidStudioProjects/TheBookUser/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.265625" />
         <entry key="..\:/Users/x19g001/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/activity_fake.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/x19g001/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/activity_login.xml" value="0.23541666666666666" />
         <entry key="..\:/Users/x19g001/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/x19g001/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/activity_repassword_config.xml" value="0.1716485507246377" />
         <entry key="..\:/Users/x19g001/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/fragment_fake.xml" value="0.23541666666666666" />
         <entry key="..\:/Users/x19g001/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/fragment_home.xml" value="0.17864583333333334" />
         <entry key="..\:/Users/x19g001/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/fragment_home_fake.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/x19g001/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/fragment_navigation_choiceaccount.xml" value="0.11448834853090173" />
-        <entry key="..\:/Users/x19g001/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/fragment_navigation_favorite.xml" value="0.17864583333333334" />
+        <entry key="..\:/Users/x19g001/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/fragment_navigation_favorite.xml" value="0.33" />
         <entry key="..\:/Users/x19g001/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/fragment_navigation_location.xml" value="0.11448834853090173" />
+        <entry key="..\:/Users/x19g001/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/fragment_navigation_needlist_add.xml" value="0.12132725430597771" />
+        <entry key="..\:/Users/x19g001/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/fragment_navigation_newaccount.xml" value="0.12132725430597771" />
         <entry key="..\:/Users/x19g001/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/fragment_navigation_sendmail.xml" value="0.11448834853090173" />
+        <entry key="..\:/Users/x19g001/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/search.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/x19g001/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/searchbook.xml" value="0.1707193515704154" />
+        <entry key="..\:/Users/x19g001/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/searchresult.xml" value="0.35104166666666664" />
         <entry key="..\:/Users/x19g011/AndroidStudioProjects/TheBookUser/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.25555555555555554" />
         <entry key="..\:/Users/x19g011/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/x19g011/AndroidStudioProjects/TheBookUser/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />

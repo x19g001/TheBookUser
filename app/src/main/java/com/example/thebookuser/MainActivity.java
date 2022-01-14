@@ -15,6 +15,7 @@ import android.widget.SearchView;
 import android.widget.TextView;
 
 
+import com.example.thebookuser.ui.favorite.FavoriteFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.ActionBar;
@@ -65,7 +66,22 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button button3 = findViewById(R.id.button3);
+        //ボタンが押されたときの動作
+        button3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SearchResultActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
+
+
+
+
+
 
     //メニューやボタンを表示させる
     @Override

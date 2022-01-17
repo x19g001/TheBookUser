@@ -10,38 +10,53 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.SimpleAdapter;
 
 //import com.example.thebookuser.databinding.ActivityMainBinding;
 
+import com.example.thebookuser.ui.home.ListViewAdapter;
+
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class navigation_needlist extends AppCompatActivity {
 
+    private static final String[] scenes = {
+            "火花", "下町ロケット", "お金が貯まるのはどっち？", "羊と鋼の森",
+            "ハリーポッターと賢者の石", "マスカレード・ホテル", "情報処理用語辞典"
+    };
 
+    private static final int[] photos = {
+            R.drawable.hibana,R.drawable.roketto,R.drawable.money,R.drawable.hituzimori,R.drawable.harrypotta,
+            R.drawable.maskareido,R.drawable.jyouhou
+    };
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_navigation_needlist);
-//        if (getArguments() != null) {
-//            mParam1 = getArguments().getString(ARG_PARAM1);
-//            mParam2 = getArguments().getString(ARG_PARAM2);
-//        }
 
-        ArrayList needlist = new ArrayList<>();
+        // ListViewのインスタンスを生成
+        ListView listView = findViewById(R.id.list_view);
 
 
-        // リスト項目とListViewを対応付けるArrayAdapterを用意する
-        ArrayAdapter adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, needlist);
+        // BaseAdapter を継承したadapterのインスタンスを生成
+        // レイアウトファイル list.xml を activity_main.xml に
+        // inflate するためにadapterに引数として渡す
+        BaseAdapter adapter=new ListViewAdapter(this.getApplicationContext(),R.layout.list,scenes,photos);
 
-        // ListViewにArrayAdapterを設定する
-        ListView listView = (ListView)findViewById(R.id.list_view);
+        // ListViewにadapterをセット
         listView.setAdapter(adapter);
 
+        // クリックリスナーをセット
+        listView.setOnItemClickListener(this::onItemClick);
 
         final Button button1 = findViewById(R.id.next_button);
         final Button button2 = findViewById(R.id.backhome);
@@ -68,6 +83,25 @@ public class navigation_needlist extends AppCompatActivity {
 
         setSupportActionBar(findViewById(R.id.toolbar));
         getSupportActionBar().setTitle("欲しいものリスト");
+    }
+
+
+    public void onItemClick(AdapterView<?> parent, View v,
+                            int position, long id) {
+
+        Intent intent = new Intent(
+                this.getApplicationContext(), SearchActivity.class);
+
+        // clickされたpositionのtextとphotoのID
+        String selectedText = scenes[position];
+        int selectedPhoto = photos[position];
+
+
+        // インテントにセット
+        intent.putExtra("Text", selectedText);
+        intent.putExtra("Photo", selectedPhoto);
+        // SubActivityへ遷移
+        startActivity(intent);
     }
 
 

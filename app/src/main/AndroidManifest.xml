@@ -9,63 +9,62 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TheBookUser">
+
         <activity
-            android:name=".FakeHome"
+            android:name=".repassword_config"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".repassword_confirm"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity
+            android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.TheBookUserNoaction" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name=".repassword_config"
-            android:exported="false"
-            android:theme="@style/Theme.TheBookUserNoaction" />
-        <activity
-            android:name=".repassword_confirm"
-            android:exported="false"
-            android:theme="@style/Theme.TheBookUserNoaction" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false"
-            android:label="@string/app_name">
-
-        </activity>
         <activity
             android:name=".navigation_needlist"
             android:label="NeedListScreen"
-            android:theme="@style/Theme.TheBookUserNoaction" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".navigation_needlist_add"
             android:label="AddListScreen"
-            android:theme="@style/Theme.TheBookUserNoaction" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        //ログイン系
         <activity
             android:name=".navigation_choiceaccount"
             android:label="LoginScreen"
-            android:theme="@style/Theme.TheBookUserNoaction" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".login.LoginActivity"
             android:label="LoginScreen"
-            android:theme="@style/Theme.TheBookUserNoaction" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".navigation_newaccount"
             android:label="LoginScreen"
-            android:theme="@style/Theme.TheBookUserNoaction" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".navigation_sendmail"
             android:label="LoginScreen"
-            android:theme="@style/Theme.TheBookUserNoaction" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        //検索系
         <activity
             android:name=".SearchActivity"
             android:label="SearchScreen"
-            android:theme="@style/Theme.TheBookUserNoaction" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".SearchResultActivity"
             android:label="SearchScreen"
-            android:theme="@style/Theme.TheBookUserNoaction" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
     </application>
+
 
 </manifest>

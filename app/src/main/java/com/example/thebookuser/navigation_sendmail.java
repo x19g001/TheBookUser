@@ -36,7 +36,7 @@ public class navigation_sendmail extends AppCompatActivity {
         final Button fix_button = findViewById(R.id.fix_button);
         final Button ok_button = findViewById(R.id.ok_button);
 
-        //修正ボタンが押されたときの動作
+        //OKボタンが押されたときの動作
         ok_button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent intent = new Intent(getApplication(), MainActivity.class);

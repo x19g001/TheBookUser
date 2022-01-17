@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
 
          Button homenext_button = findViewById(R.id.home_button);
-
+         Button button3 = findViewById(R.id.button3);
 
         //アクションバーを無理やり非表示
 //        ActionBar actionBar = getSupportActionBar();
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button button3 = findViewById(R.id.button3);
+
         //ボタンが押されたときの動作
         button3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

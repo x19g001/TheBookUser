@@ -44,11 +44,19 @@ public class navigation_needlist extends AppCompatActivity {
 
 
         final Button button1 = findViewById(R.id.next_button);
+        final Button button2 = findViewById(R.id.backhome);
 
         //ボタンが押されたときの動作
         button1.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent intent = new Intent(navigation_needlist.this,navigation_needlist_add.class);
+                startActivity(intent);
+            }
+        });
+
+        button2.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(navigation_needlist.this,MainActivity.class);
                 startActivity(intent);
             }
         });

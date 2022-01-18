@@ -1,10 +1,12 @@
 package com.example.thebookuser;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -61,6 +63,16 @@ public class navigation_needlist_add extends AppCompatActivity {
 //            mParam1 = getArguments().getString(ARG_PARAM1);
 //            mParam2 = getArguments().getString(ARG_PARAM2);
 //        }
+
+        final Button a_button = findViewById(R.id.a_button);
+
+        //ボタンが押されたときの動作
+        a_button.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(navigation_needlist_add.this,navigation_needlist.class);
+                startActivity(intent);
+            }
+        });
     }
     @Override
     public boolean onSupportNavigateUp() {

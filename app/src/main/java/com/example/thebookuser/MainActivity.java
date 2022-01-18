@@ -1,9 +1,5 @@
 package com.example.thebookuser;
 
-import static com.example.thebookuser.R.id.nav_view;
-import static com.example.thebookuser.R.id.toolbar;
-
-
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,14 +8,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SearchView;
-import android.widget.TextView;
 
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -65,7 +58,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+
+
     }
+
+
+
+
+
 
     //メニューやボタンを表示させる
     @Override

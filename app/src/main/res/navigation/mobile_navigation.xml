@@ -11,6 +11,7 @@
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
+
     <fragment
         android:id="@+id/navigation_favorite"
         android:name="com.example.thebookuser.navigation_favorite"
@@ -41,4 +42,7 @@
         android:name="com.example.thebookuser.navigation_sendmail"
         android:label="fragment_navigation_sendmail"
         tools:layout="@layout/fragment_navigation_sendmail" />
+
+
+
 </navigation>

@@ -77,7 +77,7 @@ public class SearchBactivity  extends AppCompatActivity implements AdapterView.O
         Intent intent = new Intent(this.getApplicationContext(), Searchfactivity.class);
         // clickされたpositionのtextとphotoのID
         String selectedText = scenes[position];
-        String selectedText11 = "在庫数:"+zaiko[position];
+        String selectedText11 = "近くの店舗の在庫数:"+zaiko[position];
         String selectedText3 = "著者名:"+author[position];
         String selectedText2 = "ISBN:"+isbn[position];
         String selectedText4 = "レーベル:"+lebel[position];

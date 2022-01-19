@@ -25,6 +25,7 @@ public class Searchfactivity extends AppCompatActivity {
         String selectedText6 = intent.getStringExtra("Text6");
         String selectedText7 = intent.getStringExtra("Text7");
         String selectedText8 = intent.getStringExtra("Text8");
+        String selectedText11=intent.getStringExtra("Text11");
 
         int selectedPhoto = intent.getIntExtra("Photo", 0);
         ImageView imageView1 = findViewById(R.id.selected_photo);
@@ -33,6 +34,11 @@ public class Searchfactivity extends AppCompatActivity {
 
         TextView textView = findViewById(R.id.selected_text);
         textView.setText(selectedText);
+
+        TextView textView11 = findViewById(R.id.selected_text11);
+        SpannableString spanStr11 = new SpannableString(selectedText11);
+        spanStr11.setSpan(new UnderlineSpan(), 0, selectedText11.length(), 0);
+        textView11.setText(spanStr11);
 
         TextView textView2 = findViewById(R.id.selected_text2);
         SpannableString spanStr2 = new SpannableString(selectedText2);

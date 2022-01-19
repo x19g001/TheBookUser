@@ -48,6 +48,11 @@ public class SearchBactivity  extends AppCompatActivity implements AdapterView.O
 
     };
 
+    private static final String[] zaiko = {
+            "13",
+
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,6 +77,7 @@ public class SearchBactivity  extends AppCompatActivity implements AdapterView.O
         Intent intent = new Intent(this.getApplicationContext(), Searchfactivity.class);
         // clickされたpositionのtextとphotoのID
         String selectedText = scenes[position];
+        String selectedText11 = "在庫数:"+zaiko[position];
         String selectedText3 = "著者名:"+author[position];
         String selectedText2 = "ISBN:"+isbn[position];
         String selectedText4 = "レーベル:"+lebel[position];
@@ -83,6 +89,7 @@ public class SearchBactivity  extends AppCompatActivity implements AdapterView.O
         // インテントにセット
         intent.putExtra("Text", selectedText);
         intent.putExtra("Photo", selectedPhoto);
+        intent.putExtra("Text11",selectedText11);
         intent.putExtra("Text2", selectedText2);
         intent.putExtra("Text3", selectedText3);
         intent.putExtra("Text4", selectedText4);

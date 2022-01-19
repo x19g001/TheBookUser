@@ -67,6 +67,16 @@
             android:name=".SearchResultActivity"
             android:label="SearchScreen"
             android:theme="@style/Theme.TheBookUserNoaction" />
+
+        <activity
+            android:name=".SearchBactivity"
+            android:label="SearchScreen"
+            android:theme="@style/Theme.TheBookUserNoaction" />
+
+        <activity
+            android:name=".Searchfactivity"
+            android:label="SearchScreen"
+            android:theme="@style/Theme.TheBookUserNoaction" />
     </application>
 
 </manifest>

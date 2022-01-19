@@ -38,7 +38,7 @@ public class FakeHome extends AppCompatActivity {
     private SearchView.OnQueryTextListener onQueryTextListener=new SearchView.OnQueryTextListener() {
         @Override
         public boolean onQueryTextSubmit(String searchWord) {
-            Intent intent=new Intent(FakeHome.this,SearchResultActivity.class);
+            Intent intent=new Intent(FakeHome.this,SearchBactivity.class);
             startActivity(intent);
             return true;
         }

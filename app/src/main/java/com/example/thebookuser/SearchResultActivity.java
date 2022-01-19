@@ -46,8 +46,12 @@ public class SearchResultActivity extends AppCompatActivity
         };
 
         private static final String[] hangata = {
-                "文庫判",
-                "文庫判", "B6判", "文庫判", "46判", "文庫判", "B6判"
+            "文庫判",
+            "文庫判", "B6判", "文庫判", "46判", "文庫判", "B6判"
+    };
+        private static final String[] zaiko = {
+                "13","11","5","3","6","7","在庫なし"
+
         };
 
         private static final int[] photos = {
@@ -87,6 +91,7 @@ public class SearchResultActivity extends AppCompatActivity
 
         // clickされたpositionのtextとphotoのID
         String selectedText = scenes[position];
+            String selectedText11 = "在庫数:"+zaiko[position];
         String selectedText3 = "著者名:"+author[position];
         String selectedText2 = "ISBN:"+isbn[position];
         String selectedText4 = "レーベル:"+lebel[position];
@@ -99,6 +104,7 @@ public class SearchResultActivity extends AppCompatActivity
 
             // インテントにセット
         intent.putExtra("Text", selectedText);
+        intent.putExtra("Text11",selectedText11);
         intent.putExtra("Text2", selectedText2);
         intent.putExtra("Text3", selectedText3);
         intent.putExtra("Text4", selectedText4);

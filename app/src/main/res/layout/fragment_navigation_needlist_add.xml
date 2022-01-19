@@ -87,7 +87,7 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:background="@drawable/edittext_flame"
-        android:hint="例：東野 圭吾※性と名の間は半角スペースを入れてください"
+        android:hint="例：東野 圭吾"
         android:inputType="text"
         android:paddingLeft="5dp"
         app:layout_constraintBottom_toBottomOf="parent"

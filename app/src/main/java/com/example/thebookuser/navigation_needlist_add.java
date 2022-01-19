@@ -32,15 +32,7 @@ public class navigation_needlist_add extends AppCompatActivity {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment navigation_needlist_add.
-     */
-    // TODO: Rename and change types and number of parameters
+
     public static navigation_needlist_add newInstance(String param1, String param2) {
         navigation_needlist_add fragment = new navigation_needlist_add();
         Bundle args = new Bundle();
@@ -59,17 +51,13 @@ public class navigation_needlist_add extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("欲しいものリスト");
-//        if (getArguments() != null) {
-//            mParam1 = getArguments().getString(ARG_PARAM1);
-//            mParam2 = getArguments().getString(ARG_PARAM2);
-//        }
 
         final Button a_button = findViewById(R.id.a_button);
 
         //ボタンが押されたときの動作
         a_button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(navigation_needlist_add.this,navigation_needlist.class);
+                Intent intent = new Intent(navigation_needlist_add.this,NeedlistFake.class);
                 startActivity(intent);
             }
         });

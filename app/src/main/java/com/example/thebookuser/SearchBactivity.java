@@ -51,7 +51,7 @@ public class SearchBactivity  extends AppCompatActivity implements AdapterView.O
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.search);
+        setContentView(R.layout.searchdf);
         // ListViewのインスタンスを生成
         ListView listView = findViewById(R.id.list_view);
 
@@ -69,7 +69,7 @@ public class SearchBactivity  extends AppCompatActivity implements AdapterView.O
 
     @Override
     public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-        Intent intent = new Intent(this.getApplicationContext(), SearchActivity.class);
+        Intent intent = new Intent(this.getApplicationContext(), Searchfactivity.class);
         // clickされたpositionのtextとphotoのID
         String selectedText = scenes[position];
         String selectedText3 = "著者名:"+author[position];

@@ -85,15 +85,13 @@ public class MainActivity extends AppCompatActivity {
     private SearchView.OnQueryTextListener onQueryTextListener=new SearchView.OnQueryTextListener() {
         @Override
         public boolean onQueryTextSubmit(String searchWord) {
-            Intent intent=new Intent(MainActivity.this,SearchBactivity.class);
+            Intent intent=new Intent(MainActivity.this,SearchResultActivity.class);
             startActivity(intent);
             return true;
         }
 
         @Override
         public boolean onQueryTextChange(String newText) {
-            Intent intent=new Intent(MainActivity.this,SearchResultActivity.class);
-            startActivity(intent);
             return false;
         }
     };

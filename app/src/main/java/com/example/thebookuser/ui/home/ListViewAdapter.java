@@ -20,18 +20,16 @@ public class ListViewAdapter extends BaseAdapter {
     private final LayoutInflater inflater;
     private final int itemLayoutId;
     private final String[] titles;
-    private final String[] zaikosu;
     private int[] ids;
     //
     public ListViewAdapter(Context context, int itemLayoutId,
-                           String[] scenes, int[] photos,String[] zaiko) {
+                           String[] scenes, int[] photos) {
         super();
         this.inflater = (LayoutInflater)
                 context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         this.itemLayoutId = itemLayoutId;
         this.titles = scenes;
         this.ids = photos;
-        this.zaikosu=zaiko;
     }
 
     @Override
@@ -55,7 +53,6 @@ public class ListViewAdapter extends BaseAdapter {
 
         holder.imageView.setImageResource(ids[position]);
         // 現在の position にあるファイル名リストを holder の textView にセット
-        holder.textView.setText(titles[position]);
         holder.textView.setText(titles[position]);
         return convertView;
     }

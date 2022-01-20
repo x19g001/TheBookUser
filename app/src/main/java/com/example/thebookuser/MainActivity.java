@@ -30,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
             "火花", "下町ロケット", "お金が貯まるのはどっち？", "羊と鋼の森",
             "ハリーポッターと賢者の石", "マスカレード・ホテル", "情報処理用語辞典"
     };
+
+    String bks= String.valueOf(scenes);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -88,13 +91,16 @@ public class MainActivity extends AppCompatActivity {
 
     //サーチバーがタップされたとき
     private SearchView.OnQueryTextListener onQueryTextListener=new SearchView.OnQueryTextListener() {
+
+
         @Override
         public boolean onQueryTextSubmit(String searchWord) {
+            int cnt=1;
             if (searchWord.contains("火花")) {
                 Intent intent = new Intent(MainActivity.this, SearchBactivity.class);
                 startActivity(intent);
                 return true;
-            }else if(searchWord.matches(".*"+scenes)){
+            }else if(searchWord.contains(scenes[cnt])){
                 Intent intent=new Intent(MainActivity.this,SearchResultActivity.class);
                 startActivity(intent);
                 return true;

@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, SearchBactivity.class);
                 startActivity(intent);
                 return true;
-            }else if(searchWord.contains("")){
+            }else if(searchWord.matches(".*"+scenes)){
                 Intent intent=new Intent(MainActivity.this,SearchResultActivity.class);
                 startActivity(intent);
                 return true;

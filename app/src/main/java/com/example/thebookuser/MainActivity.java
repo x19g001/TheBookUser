@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SearchView;
+import android.widget.Toast;
 
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -25,6 +26,10 @@ public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     SearchView mSearchView;
 
+    private static final String[] scenes = {
+            "火花", "下町ロケット", "お金が貯まるのはどっち？", "羊と鋼の森",
+            "ハリーポッターと賢者の石", "マスカレード・ホテル", "情報処理用語辞典"
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -85,13 +90,24 @@ public class MainActivity extends AppCompatActivity {
     private SearchView.OnQueryTextListener onQueryTextListener=new SearchView.OnQueryTextListener() {
         @Override
         public boolean onQueryTextSubmit(String searchWord) {
-            Intent intent=new Intent(MainActivity.this,SearchResultActivity.class);
-            startActivity(intent);
-            return true;
-        }
+            if (searchWord.contains("火花")) {
+                Intent intent = new Intent(MainActivity.this, SearchBactivity.class);
+                startActivity(intent);
+                return true;
+            }else if(searchWord.contains("")){
+                Intent intent=new Intent(MainActivity.this,SearchResultActivity.class);
+                startActivity(intent);
+                return true;
+            }
+            else {
+                Toast.makeText(MainActivity.this,"検索された本が見つかりませんでした",Toast.LENGTH_LONG).show();
 
+                return false;
+            }
+        }
         @Override
         public boolean onQueryTextChange(String newText) {
+
             return false;
         }
     };

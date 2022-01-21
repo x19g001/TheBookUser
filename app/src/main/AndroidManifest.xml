@@ -77,6 +77,11 @@
             android:name=".Searchfactivity"
             android:label="SearchScreen"
             android:theme="@style/Theme.TheBookUserNoaction" />
+
+        <activity
+            android:name=".navigation_favorite"
+            android:label="FavoriteScreen"
+            android:theme="@style/Theme.TheBookUserNoaction" />
     </application>
 
 </manifest>

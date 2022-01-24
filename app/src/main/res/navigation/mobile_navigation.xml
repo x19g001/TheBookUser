@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_home" />
 
 
-    <fragment
+    <activity
         android:id="@+id/navigation_favorite"
         android:name="com.example.thebookuser.navigation_favorite"
         android:label="お気に入り"
@@ -42,6 +42,7 @@
         android:name="com.example.thebookuser.navigation_sendmail"
         android:label="fragment_navigation_sendmail"
         tools:layout="@layout/fragment_navigation_sendmail" />
+
 
 
 

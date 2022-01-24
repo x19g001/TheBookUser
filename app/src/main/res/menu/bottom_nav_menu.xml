@@ -18,6 +18,7 @@
         android:icon="@drawable/ic_location_24"
         android:title="近くのお店" />
 
+//
 
 
 </menu>

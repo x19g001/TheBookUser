@@ -20,7 +20,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.thebookuser.MainActivity;
 import com.example.thebookuser.navigation_choiceaccount;
+import com.example.thebookuser.navigation_needlist;
+import com.example.thebookuser.navigation_needlist_add;
 import com.example.thebookuser.navigation_newaccount;
 import com.example.thebookuser.R;
 import com.example.thebookuser.repassword_config;
@@ -45,6 +48,16 @@ public class LoginActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        final Button l_button = findViewById(R.id.login);
+
+        //ボタンが押されたときの動作
+        l_button.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         loginViewModel = new ViewModelProvider(this, new LoginViewModelFactory())
                 .get(LoginViewModel.class);

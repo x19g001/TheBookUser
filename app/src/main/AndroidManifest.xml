@@ -82,6 +82,18 @@
             android:name=".navigation_favorite"
             android:label="FavoriteScreen"
             android:theme="@style/Theme.TheBookUserNoaction" />
+
+        <activity
+            android:name=".ShopInfoActivity"
+            android:label="FavoriteScreen"
+            android:theme="@style/Theme.TheBookUserNoaction"/>
+
+        <activity
+            android:name=".SubshopInfoActivity"
+            android:label="FavoriteScreen"
+            android:theme="@style/Theme.TheBookUserNoaction"/>
+
+
     </application>
 
 </manifest>

@@ -24,7 +24,7 @@ public class SearchBactivity  extends AppCompatActivity implements AdapterView.O
             "又吉直樹"
     };
     private static final String[] isbn = {
-            "4167907828"
+            "9784167907828"
     };
 
     private static final String[] lebel = {

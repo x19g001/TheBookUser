@@ -36,7 +36,7 @@ public class navigation_favorite extends AppCompatActivity {
 
         setSupportActionBar(findViewById(R.id.toolbar));
 
-        getSupportActionBar().setTitle("欲しいものリスト");
+        getSupportActionBar().setTitle("お気に入り");
         //ボタンが押されたときの動作
         button3.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){

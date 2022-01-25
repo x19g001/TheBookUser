@@ -49,10 +49,10 @@ public class LoginActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        final Button button1 = findViewById(R.id.login);
+        final Button l_button = findViewById(R.id.login);
 
         //ボタンが押されたときの動作
-        button1.setOnClickListener(new View.OnClickListener(){
+        l_button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(intent);

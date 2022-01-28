@@ -11,16 +11,21 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.thebookuser.ui.home.ListViewAdapter;
 
-public class ShopInfoActivity extends AppCompatActivity  implements AdapterView.OnItemClickListener {
+public class TShopInfoActivity extends AppCompatActivity
+        implements AdapterView.OnItemClickListener {
 
     private static final String[] scenes = {
             "FJB書店"
     };
+    private static final String[] yubin = {
+            "〒273-0005"
+    };
     private static final String[] jyusyo = {
-            "〒273-0005千葉県船橋市本町7丁目12-16"
+            "千葉県船橋市本町7丁目12-16"
+
     };
     private static final String[] hour = {
-            "営業時間 10:00~22:00"
+            "営業時間:10:00~22:00"
     };
 
     private static final String[] tell = {
@@ -39,7 +44,7 @@ public class ShopInfoActivity extends AppCompatActivity  implements AdapterView.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.favoriteinfo);
+        setContentView(R.layout.activity_tshop_info);
 
         // ListViewのインスタンスを生成
         ListView listView = findViewById(R.id.list_view);
@@ -49,7 +54,7 @@ public class ShopInfoActivity extends AppCompatActivity  implements AdapterView.
         // レイアウトファイル list.xml を activity_main.xml に
         // inflate するためにadapterに引数として渡す
         BaseAdapter adapter = new ListViewAdapter(this.getApplicationContext(),
-                R.layout.list, scenes, photos);
+                R.layout.list,scenes,photos);
 
         // ListViewにadapterをセット
         listView.setAdapter(adapter);
@@ -63,20 +68,19 @@ public class ShopInfoActivity extends AppCompatActivity  implements AdapterView.
     public void onItemClick(AdapterView<?> parent, View v,
                             int position, long id) {
 
-        Intent intent = new Intent(
-                this.getApplicationContext(), SubshopInfoActivity.class);
-
+        Intent intent =new Intent(this.getApplicationContext(),SubTShopInfoActivity.class);
         // clickされたpositionのtextとphotoのID
         String selectedText = scenes[position];
-        String selectedText3 = jyusyo[position];
-        String selectedText2 = hour[position];
-        String selectedText4 = tell[position];
-        String selectedText5 = adress[position];
-
+        String selectedText11 = yubin[position];
+        String selectedText2 = jyusyo[position];
+        String selectedText3= hour[position];
+        String selectedText4 = "電話番号:"+tell[position];
+        String selectedText5 = "メールアドレス:"+adress[position];
         int selectedPhoto = photos[position];
 
         // インテントにセット
         intent.putExtra("Text", selectedText);
+        intent.putExtra("Text11",selectedText11);
         intent.putExtra("Text2", selectedText2);
         intent.putExtra("Text3", selectedText3);
         intent.putExtra("Text4", selectedText4);

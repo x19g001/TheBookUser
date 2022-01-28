@@ -6,12 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".ShopInfoActivity">
+    tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="411dp"
-        android:layout_height="81dp"
+        android:layout_height="60dp"
         android:background="#87ceeb"
         android:backgroundTint="#87ceeb"
         android:minHeight="?attr/actionBarSize"
@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_margin="20dp"
-        android:text="店舗情報"
+        android:text="店舗詳細"
         android:textColor="#050505"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar"
@@ -78,6 +78,7 @@
                 android:scaleType="center"
                 />
 
+
             <TextView
                 android:id="@+id/selected_text0"
                 android:layout_width="match_parent"
@@ -85,6 +86,21 @@
                 android:layout_margin="10dp"
                 android:textColor="#000"
                 android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.598"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.362"
+
+                />
+            <TextView
+                android:id="@+id/selected_text11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#000"
+                android:textSize="25sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintHorizontal_bias="0.598"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -150,7 +166,6 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.742" />
-
 
 
 

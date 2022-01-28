@@ -40,7 +40,7 @@ public class navigation_favorite extends AppCompatActivity {
         //ボタンが押されたときの動作
         button3.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(navigation_favorite.this,ShopInfoActivity.class);
+                Intent intent = new Intent(navigation_favorite.this,TShopInfoActivity.class);
                 startActivity(intent);
             }
         });

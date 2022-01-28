@@ -7,23 +7,25 @@ import android.text.style.UnderlineSpan;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SubshopInfoActivity extends AppCompatActivity {
+public class SubTShopInfoActivity extends AppCompatActivity {
+
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.favoriteinfo);
+        setContentView(R.layout.activity_tshop_info_sub);
 
         Intent intent = getIntent();
         // MainActivityからintentで受け取ったものを取り出す
         String selectedText = intent.getStringExtra("Text");
+        String selectedText11=intent.getStringExtra("Text11");
         String selectedText2 = intent.getStringExtra("Text2");
         String selectedText3 = intent.getStringExtra("Text3");
         String selectedText4 = intent.getStringExtra("Text4");
         String selectedText5 = intent.getStringExtra("Text5");
-        String selectedText0 = intent.getStringExtra("Text0");
+
+
 
 
         int selectedPhoto = intent.getIntExtra("Photo", 0);
@@ -32,6 +34,11 @@ public class SubshopInfoActivity extends AppCompatActivity {
 
         TextView textView = findViewById(R.id.selected_text);
         textView.setText(selectedText);
+
+        TextView textView11 = findViewById(R.id.selected_text11);
+        SpannableString spanStr11 = new SpannableString(selectedText11);
+        spanStr11.setSpan(new UnderlineSpan(), 0, selectedText11.length(), 0);
+        textView11.setText(spanStr11);
 
         TextView textView2 = findViewById(R.id.selected_text2);
         SpannableString spanStr2 = new SpannableString(selectedText2);
@@ -54,10 +61,8 @@ public class SubshopInfoActivity extends AppCompatActivity {
         spanStr5.setSpan(new UnderlineSpan(), 0, selectedText5.length(), 0);
         textView5.setText(spanStr5);
 
-        TextView textView0 = findViewById(R.id.selected_text0);
-        SpannableString spanStr0 = new SpannableString(selectedText0);
-        spanStr0.setSpan(new UnderlineSpan(), 0, selectedText0.length(), 0);
-        textView0.setText(spanStr0);
+
+
 
     }
-    }
+}

@@ -84,11 +84,6 @@
             android:theme="@style/Theme.TheBookUserNoaction" />
 
         <activity
-            android:name=".TShopInfoActivity"
-            android:label="FavoriteScreen"
-            android:theme="@style/Theme.TheBookUserNoaction" />
-
-        <activity
             android:name=".SubTShopInfoActivity"
             android:label="FavoriteScreen"
             android:theme="@style/Theme.TheBookUserNoaction" />

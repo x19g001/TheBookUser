@@ -43,7 +43,7 @@ public class navigation_favorite extends AppCompatActivity implements AdapterVie
     };
 
     private static final int[] photos = {
-            R.drawable.fjbmap
+            R.drawable.fjbmap2
     };
 
     @Override

@@ -49,7 +49,7 @@ public class SearchBactivity  extends AppCompatActivity implements AdapterView.O
     };
 
     private static final String[] zaiko = {
-            "在庫あり(13冊)",
+            "在庫あり",
 
     };
 

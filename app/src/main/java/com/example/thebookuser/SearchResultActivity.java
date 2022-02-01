@@ -50,7 +50,7 @@ public class SearchResultActivity extends AppCompatActivity
             "文庫判", "B6判", "文庫判", "46判", "文庫判", "B6判"
     };
         private static final String[] zaiko = {
-                "在庫あり(13冊)","在庫あり(11冊)","残り僅か(5冊)","残り僅か(3冊)","残り僅か(6冊)","残り僅か(7冊)","在庫なし"
+                "在庫あり","在庫あり","残り僅か(5冊)","残り僅か(3冊)","残り僅か(6冊)","残り僅か(7冊)","在庫なし"
 
         };
 

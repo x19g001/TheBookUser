@@ -49,6 +49,9 @@ public class TShopInfoActivity extends AppCompatActivity
         // ListViewのインスタンスを生成
         ListView listView = findViewById(R.id.list_view1);
 
+        setSupportActionBar(findViewById(R.id.toolbar));
+
+        getSupportActionBar().setTitle("お気に入り");
 
         // BaseAdapter を継承したadapterのインスタンスを生成
         // レイアウトファイル list.xml を activity_main.xml に

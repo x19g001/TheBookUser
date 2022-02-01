@@ -50,7 +50,7 @@ public class SearchResultActivity extends AppCompatActivity
             "文庫判", "B6判", "文庫判", "46判", "文庫判", "B6判"
     };
         private static final String[] zaiko = {
-                "13","11","5","3","6","7","在庫なし"
+                "在庫あり(13冊)","在庫あり(11冊)","残り僅か(5冊)","残り僅か(3冊)","残り僅か(6冊)","残り僅か(7冊)","在庫なし"
 
         };
 
@@ -91,7 +91,7 @@ public class SearchResultActivity extends AppCompatActivity
 
         // clickされたpositionのtextとphotoのID
         String selectedText = scenes[position];
-            String selectedText11 = "近くの店舗の在庫数:"+zaiko[position]+"冊";
+            String selectedText11 = "近くの店舗の在庫:"+zaiko[position];
         String selectedText3 = "著者名:"+author[position];
         String selectedText2 = "ISBN:"+isbn[position];
         String selectedText4 = "レーベル:"+lebel[position];

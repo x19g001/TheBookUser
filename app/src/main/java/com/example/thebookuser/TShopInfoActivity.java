@@ -9,7 +9,7 @@ import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.thebookuser.ui.home.ListViewAdapter;
+import com.example.thebookuser.ui.home.ListViewAdapter2;
 
 public class TShopInfoActivity extends AppCompatActivity
         implements AdapterView.OnItemClickListener {
@@ -47,14 +47,14 @@ public class TShopInfoActivity extends AppCompatActivity
         setContentView(R.layout.activity_tshop_info);
 
         // ListViewのインスタンスを生成
-        ListView listView = findViewById(R.id.list_view);
+        ListView listView = findViewById(R.id.list_view1);
 
 
         // BaseAdapter を継承したadapterのインスタンスを生成
         // レイアウトファイル list.xml を activity_main.xml に
         // inflate するためにadapterに引数として渡す
-        BaseAdapter adapter = new ListViewAdapter(this.getApplicationContext(),
-                R.layout.list,scenes,photos);
+        BaseAdapter adapter = new ListViewAdapter2(this.getApplicationContext(),
+                R.layout.list2,scenes,photos);
 
         // ListViewにadapterをセット
         listView.setAdapter(adapter);

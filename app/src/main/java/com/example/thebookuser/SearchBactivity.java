@@ -76,8 +76,8 @@ public class SearchBactivity  extends AppCompatActivity implements AdapterView.O
     public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
         Intent intent = new Intent(this.getApplicationContext(), Searchfactivity.class);
         // clickされたpositionのtextとphotoのID
-        String selectedText = "近くの店舗の在庫:"+scenes[position];
-        String selectedText11 = zaiko[position];
+        String selectedText = scenes[position];
+        String selectedText11 = "近くの店舗の在庫:"+zaiko[position];
         String selectedText3 = "著者名:"+author[position];
         String selectedText2 = "ISBN:"+isbn[position];
         String selectedText4 = "レーベル:"+lebel[position];
